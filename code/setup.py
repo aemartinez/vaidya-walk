@@ -3,6 +3,8 @@
 # System imports
 from distutils.core import *
 import glob
+import os
+import sys
 
 # Third-party modules - we depend on numpy for everything
 import numpy
@@ -34,6 +36,9 @@ for root, dirnames, filenames in os.walk(srcDir):
         print(files)
         includeDirs.append(absPath)
         srcFiles += files
+
+includeDirs.append("/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/")
+includeDirs.append("/opt/homebrew/Cellar/boost/1.80.0/include/")
 
 print("includeDirs:")
 print(includeDirs)
