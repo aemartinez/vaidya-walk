@@ -1,7 +1,7 @@
 import numpy as np
 import pwalk
 
-print dir(pwalk)
+print(dir(pwalk))
 
 d = 2
 
@@ -20,8 +20,8 @@ initialization = np.zeros(d)
 
 dikinSamples = pwalk.generateDikinWalkSamples(initialization, A, b, r, nb_samples)
 
-print dikinSamples
+print(dikinSamples)
 
 vaidyaSamples = pwalk.generateVaidyaWalkSamples(initialization, A, b, r, nb_samples)
 
-print vaidyaSamples
+print(vaidyaSamples)

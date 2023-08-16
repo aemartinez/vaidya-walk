@@ -38,7 +38,7 @@ def run_dikin_walk(experiments, iterations, A, b, r):
         # Profiling
         t1 = time.time()
         if exp % (experiments / 10) == 0:
-            print 'Experiment Number: %d, Time Taken: %.2f' % (exp, t1 - t0)
+            print(f"Experiment Number: {exp}, Time Taken: {t1 - t0:.2f}")
             t0 = t1
     return rvs
 
@@ -60,7 +60,7 @@ def run_vaidya_walk(experiments, iterations, A, b, r):
         # Profiling
         t1 = time.time()
         if exp % (experiments / 10) == 0:
-            print 'Experiment Number: %d, Time Taken: %.2f' % (exp, t1 - t0)
+            print(f"Experiment Number: {exp}, Time Taken: {t1 - t0:.2f}")
             t0 = t1
     return rvs
 
